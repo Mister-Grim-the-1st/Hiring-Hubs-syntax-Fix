@@ -1,0 +1,819 @@
+{
+   "Description" : {
+      "Id" : "lifenode_level1_criminalUnderworld",
+      "Name" : "Criminal Underworld Connections",
+      "Details" : "Underworld Connections",
+      "Icon" : null
+   },
+   "NodeTags" : {
+      "items" : [
+         "node_level1",
+         "node_criminal",
+         "node_entry",
+		 "node_criminal_highborn"
+      ],
+      "tagSetSourceFile" : ""
+   },
+   "Duration" : 4,
+   "Requirements" : {
+      "Scope" : "MechWarrior",
+      "RequirementTags" : {
+         "items" : null,
+         "tagSetSourceFile" : ""
+      },
+      "ExclusionTags" : {
+         "items" : null,
+         "tagSetSourceFile" : ""
+      },
+      "RequirementComparisons" : [
+         
+      ]
+   },
+   "ResultSets" : [
+      {
+         "Description" : {
+            "Id" : "yakuza",
+            "Name" : "Yakuza Underworld Connections",
+            "Details" : "A shadowy criminal society, the Yakuza operate in the Draconis Combine and its former territories around the border worlds, especially inside the Free Rasalhague Republic. Like the Mafia they trace their roots back to Terra, though they have maintained their Japanese heritage despite absorbing a number of other mob-type enterprises over the years.",
+            "Icon" : null
+         },
+         "Weight" : 85,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_davion",
+						"pilot_liao",
+						"pilot_marik",
+						"pilot_steiner",
+						"pilot_aurigan",
+						"pilot_magistracy",
+						"pilot_outworld",
+						"pilot_taurian",
+						"pilot_kingdom",
+						"pilot_independent",
+						"pilot_deepspace"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "yakuzaCB",
+            "Name" : "Yakuza Crossborder Connections",
+            "Details" : "A shadowy criminal society, the Yakuza operate in the Draconis Combine and its former territories around the border worlds, especially inside the Free Rasalhague Republic. Like the Mafia they trace their roots back to Terra, though they have maintained their Japanese heritage despite absorbing a number of other mob-type enterprises over the years.",
+            "Icon" : null
+         },
+         "Weight" : 25,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_davion",
+						"pilot_steiner",
+						"pilot_outworld",
+						"pilot_kingdom"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "mafia",
+            "Name" : "Mafia Underworld Connections",
+            "Details" : "The Mafia traces its roots back to the original crime families of Terra and the island of Sicily. Found throughout human-occupied space, with higher concentrations within the Free Worlds League, Lyran Commonwealth and Federated Suns, the Mafia is no longer restricted to men of Italian heritage but accepts all into its ranks who are willing to protect 'The Family'.",
+            "Icon" : null
+         },
+         "Weight" : 75,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_davion",
+						"pilot_marik",
+						"pilot_steiner"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "mafiaCB",
+            "Name" : "Mafia Crossborder Connections",
+            "Details" : "The Mafia traces its roots back to the original crime families of Terra and the island of Sicily. Found throughout human-occupied space, with higher concentrations within the Free Worlds League, Lyran Commonwealth and Federated Suns, the Mafia is no longer restricted to men of Italian heritage but accepts all into its ranks who are willing to protect 'The Family'.",
+            "Icon" : null
+         },
+         "Weight" : 25,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_kurita",
+						"pilot_liao",
+						"pilot_rasalhague",
+						"pilot_magistracy",
+						"pilot_outworld",
+						"pilot_taurian",
+						"pilot_kingdom"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "triads",
+            "Name" : "Triad Underworld Connections",
+            "Details" : "The Tong, the Hongmen, or the more popularly known Triads trace their roots to Terra and the Sanhehui branch of the Tiandihui (Heaven and Earth) societies of Imperial China. The Tongs & Triads of today operate mainly in the Capellan Confederation or its former territories and near by game worlds. They often operate as various local gangs that defend their territory with brutal results.",
+            "Icon" : null
+         },
+         "Weight" : 75,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_liao"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "triadsCB",
+            "Name" : "Triad Crossborder Connections",
+            "Details" : "The Tong, the Hongmen, or the more popularly known Triads trace their roots to Terra and the Sanhehui branch of the Tiandihui (Heaven and Earth) societies of Imperial China. The Tongs & Triads of today operate mainly in the Capellan Confederation or its former territories and near by game worlds. They often operate as various local gangs that defend their territory with brutal results.",
+            "Icon" : null
+         },
+         "Weight" : 25,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_davion",
+						"pilot_marik",
+						"pilot_steiner",
+						"pilot_aurigan",
+						"pilot_magistracy",
+						"pilot_taurian",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "baumannGroup",
+            "Name" : "Baumann Periphery Connections",
+            "Details" : "The Baumann Group, is a large scale black market distributor, of unknown origins, operating on the Rimward Frontier who are especially known for gaining access to rare hard to find military equipment. They are believed to be named for their late succession war era leader Notker Baumann and could well be part of a larger conglomerate.",
+            "Icon" : null
+         },
+         "Weight" : 25,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_liao",
+						"pilot_marik",
+						"pilot_aurigan",
+						"pilot_magistracy",
+						"pilot_taurian",
+						"pilot_kingdom",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "darkcaste",
+            "Name" : "Dark Caste Underworld Connections",
+            "Details" : "The Dark Caste or Bandit Caste refers to the lowest caste in Clan society and while it supports the failures of Clan society, the unwanted, and the rejects it is not officially recognised by most clans. While the caste generally goes whereever the Clans do, there is obvious benefit in the various Dark Caste members establishing at least tenuous connections in nearby Deep Periphery proto-states and far flung pirate freebooters.",
+            "Icon" : null
+         },
+         "Weight" : 25,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_kingdom",
+						"pilot_deepspace"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "gameworld",
+            "Name" : "Gameworld Underworld Connections",
+            "Details" : "From Solaris, Westerhand, Astrokaszy and Galatea to Hardcore, Noisiel and Lushann.  Where Mech entertainment goes, the Gameworld Underworld follows closely behind as Stable Masters, Loansharks and Betting Agencies, especially on the fringes where old school Terran Organised Crime has less influence.",
+            "Icon" : null
+         },
+         "Weight" : 25,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_magistracy",
+						"pilot_outworld",
+						"pilot_taurian",
+						"pilot_independent",
+						"pilot_deepspace"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+					 "pilot_criminal",
+					 "loan_shark"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "pleasure",
+            "Name" : "Pleasure Industry Connections",
+            "Details" : "Kookens pleasure pit, Herotitus, Hardcore and worlds affected by the New Hedons movement.  Where pleasure and entertainment go, the Underworld follows closely behind to profiteer from it and if its not the big crime groups of the Inner Sphere, then its independent power brokers.",
+            "Icon" : null
+         },
+         "Weight" : 25,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_aurigan",
+						"pilot_magistracy",
+						"pilot_outworld",
+						"pilot_independent",
+						"pilot_deepspace"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+                     "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "privateers",
+            "Name" : "Privateer Underworld Connections",
+            "Details" : "Privateers are Pirate Mercenaries working for the highest bidders and often central authorities of a region, Pirates with Legal Papers.  Coupled with Freebooters, they are responsible for gaining access to and shifting a lot of the Blackmarket product and under the counter supplies for the various periphery and deep periphery states, as well as disrupting the efforts of their competition.",
+            "Icon" : null
+         },
+         "Weight" : 25,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_aurigan",
+						"pilot_outworld",
+						"pilot_kingdom",
+						"pilot_independent",
+						"pilot_deepspace"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_underworld",
+					 "pilot_criminal",
+					 "pilot_privateer"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "Endings" : [
+      
+      {
+         "Description" : {
+            "Id" : "merchant",
+            "Name" : "Merchant Highborn Class",
+            "Details" : "This will not be human visible. Use for designer notes",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 25,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level1",
+               "node_merchant_highborn"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+	  {
+         "Description" : {
+            "Id" : "military",
+            "Name" : "Join the Military",
+            "Details" : "exit to military",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level1",
+               "node_military",
+               "node_military_highborn"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "prison",
+            "Name" : "Go To Prison",
+            "Details" : "exit to prison",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 15,
+         "NextNodeTags" : {
+            "items" : [
+               "node_convict"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "whatever",
+            "Name" : "Go Do Whatever",
+            "Details" : "exit to any entry node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : [
+               "node_entry"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "endNode",
+            "Name" : "Wash out",
+            "Details" : "mandatory end node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : null,
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : true
+      }
+   ]
+}

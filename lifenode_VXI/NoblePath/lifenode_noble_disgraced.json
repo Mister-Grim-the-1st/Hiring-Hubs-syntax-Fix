@@ -1,0 +1,240 @@
+{
+   "Description" : {
+      "Id" : "lifenode_noble_disgraced",
+      "Name" : "Disgraced Noble",
+      "Details" : "Disgraced Noble",
+      "Icon" : null
+   },
+   "NodeTags" : {
+      "items" : [
+         "node_nobledisgraced"
+      ],
+      "tagSetSourceFile" : ""
+   },
+   "Duration" : 4,
+   "Requirements" : {
+      "Scope" : "MechWarrior",
+      "RequirementTags" : {
+         "items" : null,
+         "tagSetSourceFile" : ""
+      },
+      "ExclusionTags" : {
+         "items" : null,
+         "tagSetSourceFile" : ""
+      },
+      "RequirementComparisons" : [
+         
+      ]
+   },
+   "ResultSets" : [
+      {
+         "Description" : {
+            "Id" : "disgracedHeir",
+            "Name" : "Disgraced Heir",
+            "Details" : "Being the heir apparent of a influential family comes with a large set of privileges and an even larger set of expectations and a lot to lose when disgrace is brought to the family, especially if your title included vast lands.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : [
+                     "pilot_heir"
+                  ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_disgraced"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : [
+                     "pilot_wealthy",
+					 "pilot_heir"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : null
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "disgraced",
+            "Name" : "Disgraced Noble",
+            "Details" : "Being a noble comes with a large set of privileges and a large set of expectations and much to lose when disgrace is brought to the family, especially if your title included lands.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_disgraced"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : [
+                     "pilot_wealthy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : null
+            }
+         ]
+      }
+   ],
+   "Endings" : [
+      
+      {
+         "Description" : {
+            "Id" : "mercenary",
+            "Name" : "Join mercenary organisation",
+            "Details" : "exit to mercenary",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 60,
+         "NextNodeTags" : {
+            "items" : [
+               "node_mercenary",
+               "node_entry"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "pirate",
+            "Name" : "Become a Pirate",
+            "Details" : "exit to pirate",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 15,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level2",
+               "node_pirate",
+               "node_entry"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "whatever",
+            "Name" : "Go Do Whatever",
+            "Details" : "exit to any entry node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : [
+               "node_entry"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "endNode",
+            "Name" : "Wash out",
+            "Details" : "mandatory end node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 5,
+         "NextNodeTags" : {
+            "items" : null,
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : true
+      }
+   ]
+}

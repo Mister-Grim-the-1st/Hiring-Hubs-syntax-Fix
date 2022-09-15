@@ -1,0 +1,411 @@
+{
+   "Description" : {
+      "Id" : "lifenode_level1_militaryDischarge",
+      "Name" : "Military Early Discharge",
+      "Details" : "Military Early Discharge",
+      "Icon" : null
+   },
+   "NodeTags" : {
+      "items" : [
+         "node_earlydischarge"
+      ],
+      "tagSetSourceFile" : ""
+   },
+   "Duration" : 4,
+   "Requirements" : {
+      "Scope" : "MechWarrior",
+      "RequirementTags" : {
+         "items" : null,
+         "tagSetSourceFile" : ""
+      },
+      "ExclusionTags" : {
+         "items" : null,
+         "tagSetSourceFile" : ""
+      },
+      "RequirementComparisons" : [
+         
+      ]
+   },
+   "ResultSets" : [
+      {
+         "Description" : {
+            "Id" : "militarydishonour",
+            "Name" : "Military Dishonourable Discharge",
+            "Details" : "A Dishonorable Discharge, which may only be adjudged through conviction at a General Court-Martial, is reserved for those in the Military who should be separated under conditions of dishonor after conviction of serious offenses of a civil or military nature.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_discharged",
+					 "pilot_disgraced",
+					 "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : null
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "militarydismisal",
+            "Name" : "Military Dismissal",
+            "Details" : "Only where an officer is convicted at a General Court-Martial can the officer’s sentence include a Dismissal, which is considered the functional equivalent of a Dishonorable Discharge.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_officer"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_discharged",
+					 "pilot_disgraced",
+					 "pilot_criminal"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : null
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "militarydischarge",
+            "Name" : "Military Early Discharge",
+            "Details" : "An Early Discharge is reserved for a pattern of behavior that constitutes a significant departure from the conduct expected of Military conduct.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_discharged",
+					 "pilot_disgraced"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : null
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "militaryofficer",
+            "Name" : "Military Officer Early Discharge",
+            "Details" : "An officer's conduct is held to a higher standard and Early Discharge is reserved for a pattern of behavior that constitutes a significant departure from that Military standard.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_discharged",
+					 "pilot_disgraced"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : null
+            }
+         ]
+      }
+   ],
+   "Endings" : [
+      {
+         "Description" : {
+            "Id" : "disgraced",
+            "Name" : "Disgraced Noble",
+            "Details" : "Dismissed from a noble the family",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : [
+					"pilot_noble"
+				],
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 100,
+         "NextNodeTags" : {
+            "items" : [
+               "node_nobledisgraced"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "militaryprison",
+            "Name" : "Military Prison",
+            "Details" : "a round in the justice system",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 10,
+         "NextNodeTags" : {
+            "items" : [
+               "node_convict"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "criminal",
+            "Name" : "Criminal",
+            "Details" : "turn to a life of crime",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 10,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level2",
+               "node_criminal",
+               "node_entry"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "mercenary",
+            "Name" : "Join mercenary organisation",
+            "Details" : "exit to mercenary",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 30,
+         "NextNodeTags" : {
+            "items" : [
+               "node_mercenary",
+               "node_entry"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "pirate",
+            "Name" : "Become a Pirate",
+            "Details" : "exit to pirate",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : [
+               "node_pirate",
+               "node_entry"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "whatever",
+            "Name" : "Go Do Whatever",
+            "Details" : "exit to any entry node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 10,
+         "NextNodeTags" : {
+            "items" : [
+               "node_entry"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "endNode",
+            "Name" : "Wash out",
+            "Details" : "mandatory end node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : null,
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : true
+      }
+   ]
+}

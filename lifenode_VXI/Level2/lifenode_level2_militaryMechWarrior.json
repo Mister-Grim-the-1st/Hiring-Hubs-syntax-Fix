@@ -1,0 +1,407 @@
+{
+   "Description" : {
+      "Id" : "lifenode_level2_militaryMechWarrior",
+      "Name" : "MechWarrior",
+      "Details" : "MechWarrior",
+      "Icon" : null
+   },
+   "NodeTags" : {
+      "items" : [
+         "node_level2",
+         "node_military",
+         "node_officer",
+         "node_mechwarrior"
+      ],
+      "tagSetSourceFile" : ""
+   },
+   "Duration" : 5,
+   "Requirements" : {
+      "Scope" : "MechWarrior",
+      "RequirementTags" : {
+         "items" : null,
+         "tagSetSourceFile" : ""
+      },
+      "ExclusionTags" : {
+         "items" : [
+            "pilot_discharged"
+         ],
+         "tagSetSourceFile" : ""
+      },
+      "RequirementComparisons" : [
+         
+      ]
+   },
+   "ResultSets" : [
+      {
+         "Description" : {
+            "Id" : "tour",
+            "Name" : "MechWarrior Officer",
+            "Details" : "Battles in the Succession Wars are won or lost by the MechWarriors on each side. Piloting one of the iconic machines of war is a coveted honor and for those that come through .",
+            "Icon" : null
+         },
+         "Weight" : 100,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : [
+                     "pilot_cadet"
+                  ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_mech",
+                     "pilot_officer"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Gunnery",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Guts",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "tour",
+            "Name" : "MechWarrior Recruit",
+            "Details" : "Battles in the Succession Wars are won or lost by the MechWarriors on each side. Piloting one of the iconic machines of war is a coveted honor. There are frequent openings for Veteran recruits, 'save the metal, not the meat'.",
+            "Icon" : null
+         },
+         "Weight" : 100,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+                     "pilot_cadet"
+                  ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_mech"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Gunnery",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 1
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "Endings" : [
+      {
+         "Description" : {
+            "Id" : "promotion",
+            "Name" : "Military Promotion",
+            "Details" : "exit to mechwarrior Lieutenant",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : [
+               	   "pilot_cadet"
+               ],
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level3",
+               "node_military",
+               "node_mechwarrior"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "promotion",
+            "Name" : "Military Promotion",
+            "Details" : "exit to mechwarrior captain",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : [
+               	   "pilot_cadet"
+               ],
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level3",
+               "node_military",
+               "node_mechwarrior"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "mercenary",
+            "Name" : "Become a Mercenary",
+            "Details" : "exit to mercenary",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 25,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level3",
+               "node_mercenary"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "criminal",
+            "Name" : "Become a Pirate",
+            "Details" : "exit to pirate",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 5,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level3",
+               "node_criminal",
+               "node_mechwarrior"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "gladiator",
+            "Name" : "Become a Gladiator",
+            "Details" : "exit to gladiator",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 10,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level2",
+               "node_solaris"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "mechwarrior",
+            "Name" : "Another Tour",
+            "Details" : "redo this node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 10,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level2",
+               "node_military",
+               "node_mechwarrior"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "discharge",
+            "Name" : "Early Discharged from the Military",
+            "Details" : "exit to early discharge",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 10,
+         "NextNodeTags" : {
+            "items" : [
+               "node_earlydischarge"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "endNode",
+            "Name" : "Wash out",
+            "Details" : "mandatory end node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : null,
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : true
+      }
+   ]
+}

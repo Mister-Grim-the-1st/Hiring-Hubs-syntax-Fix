@@ -1,0 +1,766 @@
+{
+   "Description" : {
+      "Id" : "lifenode_level2_militaryOfficerNavy",
+      "Name" : "Navy Lieutenant",
+      "Details" : "Navy Lieutenant",
+      "Icon" : null
+   },
+   "NodeTags" : {
+      "items" : [
+         "node_level2",
+         "node_military",
+         "node_officer",
+         "node_navy"
+      ],
+      "tagSetSourceFile" : ""
+   },
+   "Duration" : 5,
+   "Requirements" : {
+      "Scope" : "MechWarrior",
+      "RequirementTags" : {
+         "items" : null,
+         "tagSetSourceFile" : ""
+      },
+      "ExclusionTags" : {
+         "items" : [
+            "pilot_discharged"
+         ],
+         "tagSetSourceFile" : ""
+      },
+      "RequirementComparisons" : [
+         
+      ]
+   },
+   "ResultSets" : [
+      {
+         "Description" : {
+            "Id" : "subaltern",
+            "Name" : "Naval Subaltern",
+            "Details" : "Command aboard a space vessel is a significant responsibility, one reserved in almost every case for those of noble birth who enter with the rank of Subaltern. As the Succession Wars have ground onwards, even nominally civilian DropShips have become critical elements of the war effort.",
+            "Icon" : null
+         },
+         "Weight" : 100,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_steiner",
+						"pilot_marik",
+						"pilot_kurita",
+						"pilot_liao",
+						"pilot_rasalhague",
+						"pilot_taurian",
+						"pilot_outworld",
+						"pilot_magistracy",
+						"pilot_kingdom",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_officer",
+					 "pilot_navy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Gunnery",
+                     "value" : 2
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "leutnant",
+            "Name" : "Naval Leutnant",
+            "Details" : "Command aboard a space vessel is a significant responsibility, one reserved in almost every case for those of noble birth who enter with the rank of Leutnant. As the Succession Wars have ground onwards, even nominally civilian DropShips have become critical elements of the war effort.",
+            "Icon" : null
+         },
+         "Weight" : 100,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_davion",
+						"pilot_marik",
+						"pilot_kurita",
+						"pilot_liao",
+						"pilot_rasalhague",
+						"pilot_taurian",
+						"pilot_outworld",
+						"pilot_magistracy",
+						"pilot_aurigan",
+						"pilot_kingdom",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_officer",
+                     "pilot_navy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 2
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "chui",
+            "Name" : "Naval Chu-i",
+            "Details" : "Command aboard a space vessel is a significant responsibility, one reserved in almost every case for those of noble birth who enter with the rank of Chu-i. As the Succession Wars have ground onwards, even nominally civilian DropShips have become critical elements of the war effort.",
+            "Icon" : null
+         },
+         "Weight" : 100,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_steiner",
+						"pilot_davion",
+						"pilot_marik",
+						"pilot_liao",
+						"pilot_rasalhague",
+						"pilot_taurian",
+						"pilot_outworld",
+						"pilot_magistracy",
+						"pilot_aurigan",
+						"pilot_kingdom",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_officer",
+                     "pilot_navy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 2
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "saowei",
+            "Name" : "Naval Sao-wei",
+            "Details" : "Command aboard a space vessel is a significant responsibility, one reserved in almost every case for those of noble birth who enter with the rank of Sao-wei. As the Succession Wars have ground onwards, even nominally civilian DropShips have become critical elements of the war effort.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_steiner",
+						"pilot_davion",
+						"pilot_marik",
+						"pilot_kurita",
+						"pilot_rasalhague",
+						"pilot_taurian",
+						"pilot_outworld",
+						"pilot_magistracy",
+						"pilot_aurigan",
+						"pilot_kingdom",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_officer",
+                     "pilot_navy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 2
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "ensign",
+            "Name" : "Naval Ensign",
+            "Details" : "Command aboard a space vessel is a significant responsibility, one reserved in almost every case for those of noble birth who enter with the rank of Ensign. As the Succession Wars have ground onwards, even nominally civilian DropShips have become critical elements of the war effort.",
+            "Icon" : null
+         },
+         "Weight" : 100,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_steiner",
+						"pilot_davion",
+						"pilot_kurita",
+						"pilot_liao",
+						"pilot_rasalhague",
+						"pilot_taurian",
+						"pilot_outworld",
+						"pilot_aurigan"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_officer",
+                     "pilot_navy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 2
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "cornet",
+            "Name" : "Naval Cornet",
+            "Details" : "Command aboard a space vessel is a significant responsibility, one reserved in almost every case for those of noble birth who enter with the rank of Cornet. As the Succession Wars have ground onwards, even nominally civilian DropShips have become critical elements of the war effort.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_steiner",
+						"pilot_davion",
+						"pilot_marik",
+						"pilot_kurita",
+						"pilot_liao",
+						"pilot_rasalhague",
+						"pilot_outworld",
+						"pilot_magistracy",
+						"pilot_aurigan",
+						"pilot_kingdom",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_officer",
+                     "pilot_navy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 2
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "supervisor",
+            "Name" : "Naval Supervisor",
+            "Details" : "Command aboard a space vessel is a significant responsibility, one reserved in almost every case for those of noble birth who enter with the rank of Lieutenant. As the Succession Wars have ground onwards, even nominally civilian DropShips have become critical elements of the war effort.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_steiner",
+						"pilot_davion",
+						"pilot_marik",
+						"pilot_kurita",
+						"pilot_liao",
+						"pilot_rasalhague",
+						"pilot_taurian",
+						"pilot_outworld",
+						"pilot_magistracy",
+						"pilot_aurigan",
+						"pilot_kingdom",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_command",
+                     "pilot_officer",
+                     "pilot_navy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 2
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      },
+	  {
+         "Description" : {
+            "Id" : "lojtnant",
+            "Name" : "Naval Lojtnant",
+            "Details" : "Command aboard a space vessel is a significant responsibility, one reserved in almost every case for those of noble birth who enter with the rank of Lojtnant. As the Succession Wars have ground onwards, even nominally civilian DropShips have become critical elements of the war effort.",
+            "Icon" : null
+         },
+         "Weight" : 50,
+         "Results" : [
+            {
+               "Scope" : "Company",
+               "Requirements" : {
+                  "Scope" : "Company",
+                  "RequirementTags" : {
+                     "items" : null,
+                     "tagSetSourceFile" : ""
+                  },
+                  "ExclusionTags" : {
+                     "items" : [
+						"pilot_steiner",
+						"pilot_davion",
+						"pilot_marik",
+						"pilot_kurita",
+						"pilot_liao",
+						"pilot_taurian",
+						"pilot_outworld",
+						"pilot_magistracy",
+						"pilot_aurigan",
+						"pilot_kingdom",
+						"pilot_independent"
+					 ],
+                     "tagSetSourceFile" : ""
+                  },
+                  "RequirementComparisons" : [
+                     
+                  ]
+               },
+               "AddedTags" : {
+                  "items" : [
+                     "pilot_military",
+                     "pilot_officer",
+                     "pilot_navy"
+                  ],
+                  "tagSetSourceFile" : ""
+               },
+               "RemovedTags" : {
+                  "items" : null,
+                  "tagSetSourceFile" : ""
+               },
+               "Stats" : [
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Piloting",
+                     "value" : 2
+                  },
+                  {
+                     "typeString" : "System.Int32",
+                     "name" : "Tactics",
+                     "value" : 1
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "Endings" : [
+      {
+         "Description" : {
+            "Id" : "promotion",
+            "Name" : "Military Promotion",
+            "Details" : "exit to naval captain",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 15,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level3",
+               "node_military",
+               "node_officer",
+               "node_navy"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "pirate",
+            "Name" : "Become a Pirate",
+            "Details" : "exit to pirate",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 5,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level3",
+               "node_pirate",
+               "node_captain"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "merchant",
+            "Name" : "Become a Merchant",
+            "Details" : "exit to merchant",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level3",
+               "node_merchant",
+               "node_captain"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "mechwarrior",
+            "Name" : "Become a MechWarrior",
+            "Details" : "exit to mechwarrior",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 15,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level2",
+               "node_mechwarrior",
+               "node_military"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "specops",
+            "Name" : "Become a special operator",
+            "Details" : "exit to specops",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 15,
+         "NextNodeTags" : {
+            "items" : [
+               "node_level3",
+               "node_specops"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "discharge",
+            "Name" : "Early Discharged from the Military",
+            "Details" : "exit to early discharge",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 10,
+         "NextNodeTags" : {
+            "items" : [
+               "node_earlydischarge"
+            ],
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : false
+      },
+      {
+         "Description" : {
+            "Id" : "endNode",
+            "Name" : "Wash out",
+            "Details" : "mandatory end node",
+            "Icon" : null
+         },
+         "Requirements" : {
+            "Scope" : "MechWarrior",
+            "RequirementTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "ExclusionTags" : {
+               "items" : null,
+               "tagSetSourceFile" : ""
+            },
+            "RequirementComparisons" : [
+               
+            ]
+         },
+         "Weight" : 20,
+         "NextNodeTags" : {
+            "items" : null,
+            "tagSetSourceFile" : ""
+         },
+         "EndNode" : true
+      }
+   ]
+}
